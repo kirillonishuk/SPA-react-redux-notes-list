@@ -7,11 +7,11 @@
     "dev:client": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot",
     "dev:server": "babel-node ./server/index.js",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
-    "build": "webpack --mode production --config config/webpack.prod.config.js --env.NODE_ENV=production --progress",
-    "prod": "npm run build&&SET NODE_ENV=production&&babel-node ./server/index.js",
+    "build:prod": "webpack --mode production --config config/webpack.prod.config.js --env.NODE_ENV=production --progress",
+    "prod": "SET NODE_ENV=production&&babel-node ./server/index.js",
     "lint": "eslint ./src",
-    "heroku-postbuild": "npm install&&npm install --only=dev --no-shrinkwrap&&npm run build",
-    "start": "SET NODE_ENV=production&&babel-node ./server/index.js"
+    "heroku-postbuild": "npm install&&npm run build",
+    "start": "babel-node ./server/index.js"
   },
   "author": "KirylAnishchuk",
   "license": "ISC",
