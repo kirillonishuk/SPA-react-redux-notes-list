@@ -11,7 +11,7 @@
     "prod": "npm run build&&SET NODE_ENV=production&&babel-node ./server/index.js",
     "lint": "eslint ./src",
     "heroku-postbuild": "npm install&&npm install --only=dev --no-shrinkwrap&&npm run build",
-    "start": "babel-node ./server/index.js"
+    "start": "SET NODE_ENV=production&&babel-node ./server/index.js"
   },
   "author": "KirylAnishchuk",
   "license": "ISC",
