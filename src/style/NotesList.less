@@ -1,0 +1,29 @@
+.notes-container{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@keyframes go-left-right {
+    0% {
+        margin-left: -150px;
+        opacity: 0;
+    }
+    80% {
+        opacity: .2;
+    }
+    100% {
+        margin-left: 25px;
+        opacity: 1;
+    }
+}
+
+.empty-notes{
+    animation: go-left-right .7s 1 normal;
+    -webkit-animation: go-left-right .7s 1 normal;
+    margin-top: 25px;
+    margin-left: 25px;
+}
