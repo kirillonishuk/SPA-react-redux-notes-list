@@ -16,7 +16,8 @@ class Home extends Component {
     }
 
     onValid(event) {
-        if (!!event.target.value.search(/[^0-9a-z]+$/) && event.target.value.length) {
+        const inputUrl = event.target.value.toLowerCase();
+        if (!!inputUrl.search(/[^0-9a-z]+$/) && inputUrl.length) {
             this.setState({
                 isDisable: false,
             });
@@ -29,7 +30,7 @@ class Home extends Component {
 
     handleUrlChange(event) {
         this.setState({
-            url: event.target.value,
+            url: event.target.value.toLowerCase(),
         });
         this.onValid(event);
     }
