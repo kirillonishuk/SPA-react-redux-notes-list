@@ -61,6 +61,7 @@
         "react-css-modules": "^4.7.3",
         "react-dom": "^16.4.1",
         "react-favicon": "0.0.14",
+        "react-helmet": "^5.2.0",
         "react-redux": "^5.0.7",
         "react-redux-spinner": "^1.1.3",
         "react-router-dom": "^4.3.1",

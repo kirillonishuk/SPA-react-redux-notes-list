@@ -44,6 +44,7 @@ Open `http://localhost:8088/`
 * [Concurrently](https://www.npmjs.com/package/concurrently)
 * [React-favicon](https://www.npmjs.com/package/react-favicon)
 * [React-autosize-textarea](https://www.npmjs.com/package/react-autosize-textarea)
+* [React-helmet](https://www.npmjs.com/package/react-helmet)
 
 **Icons**
 * [React-fontawesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome)
