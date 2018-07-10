@@ -1,0 +1,8 @@
+## Ignore webpack-config files
+config/*
+## Ignore build files
+dist/*
+## Ignore server-api files
+server/*
+## Ignore package files
+node_module/*
