@@ -1,18 +1,16 @@
 import axios from 'axios';
 
-const urls = 'http://localhost:8088';
-
 export default {
     listNotesByUrl(url) {
-        return axios.get(`${urls}/notesList/${url}`);
+        return axios.get(`/notesList/${url}`);
     },
     createNote(url, data) {
-        return axios.post(`${urls}/newNote/${url}`, data);
+        return axios.post(`/newNote/${url}`, data);
     },
     deleteNote(id) {
-        return axios.delete(`${urls}/${id}`);
+        return axios.delete(`/${id}`);
     },
     updateNote(id, data) {
-        return axios.put(`${urls}/${id}`, data);
+        return axios.put(`/${id}`, data);
     },
 };
