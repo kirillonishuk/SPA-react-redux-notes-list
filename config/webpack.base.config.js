@@ -33,7 +33,7 @@ module.exports = {
 							sourceMap: true,
 							modules: true,
 							localIdentName: '[name]__[local]___[hash:base64:5]',
-							minimize: true
+							minimize: true,
 						}
 					},
 					{
@@ -51,7 +51,7 @@ module.exports = {
 						loader: 'image-webpack-loader',
 						options: {
 							bypassOnDebug: true,
-							disable: true
+							disable: true,
 						}
 					}
 				]
@@ -64,7 +64,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({ 
 			template: './src/index.html', 
-			filename: './index.html' 
+			filename: './index.html' ,
 		})
 	]
 }
