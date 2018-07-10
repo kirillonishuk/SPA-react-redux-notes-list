@@ -17,7 +17,7 @@ Server host `http://localhost:8088/`
 ```
 npm run prod
 ```
-Open `http://localhost:8080/`
+Open `http://localhost:8088/`
 
 ## NPM:
 **Server:**
