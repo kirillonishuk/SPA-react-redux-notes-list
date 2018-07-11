@@ -16,7 +16,7 @@ class Home extends Component {
     }
 
     onValid(printString) {
-        if (printString.search(/[^A-Za-zА-Яа-я0-9]/) === -1) {
+        if (printString.search(/[^A-Za-zА-Яа-я0-9]/) === -1 && printString.length) {
             this.setState({
                 onDisable: false,
             });
