@@ -6,6 +6,7 @@ import '../style/App.less';
 
 import { Provider } from 'react-redux';
 import { Spinner } from 'react-redux-spinner';
+import { Helmet } from 'react-helmet';
 import Favicon from 'react-favicon';
 
 import Home from './Home';
@@ -19,6 +20,11 @@ const App = () => (
     <BrowserRouter>
         <Provider store={store}>
             <div className='site-body'>
+                <Helmet>
+                    <title>
+                        {'Notes List'}
+                    </title>
+                </Helmet>
                 <Spinner config={{ trickleRate: 0.02 }} />
                 <Favicon url='http://www.iconj.com/ico/w/2/w2u32v4s3x.ico' />
                 <Switch>

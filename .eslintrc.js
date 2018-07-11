@@ -27,7 +27,7 @@ module.exports = {
         "import/extensions": 0,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/destructuring-assignment": [2, "never"],
-        "no-console": [2, { allow: ["log", "error"] }],
+        "no-console": [2, { "allow": ["log", "error"] }],
         "no-underscore-dangle": [2, { "allow": ["_id"] }],
         "max-len": [2, { "code": 200 }],
         "jsx-a11y/label-has-for": [ 2, {
@@ -35,7 +35,7 @@ module.exports = {
             "required": {
                 "some": [ "nesting", "id" ]
             },
-            "allowChildren": false,
+            "allowChildren": false
         }]
     },
     "plugins": [
